@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulación Navegador</title>
+
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/style-mpi.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/keyboard.js"></script>
+
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.hammer.min.js" type="text/javascript"></script>
+<script src="js/modernizr.min.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<script src="js/jquery.pinchzoomer.min.js" type="text/javascript"></script> 
+<style type="text/css">
+.cierre {
+	width: 100%; height:100%; position:fixed;	
+}
+</style>
+</head>
+
+<body>
+        <header id="header-title">
+                <center>
+                    <img src="imgs/valle_oriente.png" style="height:150px;"/>
+               </center>
+        </header>
+        
+        <section>
+            <section style="width:250px; float:left; background:rgba(88,89,91,.3); height:618px;">
+                <section id="content-services">
+                <ul class="categories">
+                <li class="services"><a href="#openModal"><img src="imgs/icono-1.png" alt="servicio 1" /><p style="font-family:'questrialregular';">ACCESORIOS</p></a></li>
+                <li class="services"><a href="#openModal2" onClick='document.getElementById("mapa1").src="bancos.html";'><img src="imgs/icono-2.png" alt="servicio 2" /><p style="font-family:'questrialregular';">BANCO</p></a></li>
+                <li class="services"><a href="#openModal3"><img src="imgs/icono-3.png" alt="servicio 3" /><p style="font-family:'questrialregular';">COMIDA RÁPIDA</p></a></li>
+                <li class="services"><a href="#openModal4"><img src="imgs/icono-4.png" alt="servicio 4" /><p style="font-family:'questrialregular';">DEPORTES</p></a></li>
+                <li class="services"><a href="#openModal5" onClick='document.getElementById("mapa1").src="entretenimiento.html";'><img src="imgs/icono-5.png" alt="servicio 5" /><p style="font-family:'questrialregular';">ENTRETENIMIENTO</p></a></li>
+                <li class="services"><a href="#openModal8"><img src="imgs/icono-8.png" alt="servicio 8" /><p style="font-family:'questrialregular';">HOGAR/HOME</p></a></li>
+                <li class="services"><a href="#openModal10" onClick='document.getElementById("mapa1").src="moda.html";'><img src="imgs/icono-10.png" alt="servicio 10" /><p style="font-family:'questrialregular';">MODA/FASHION</p></a></li>
+                <li class="services"><a href="#openModal11"><img src="imgs/icono-11.png" alt="servicio 11" /><p style="font-family:'questrialregular';">ÓPTICAS</p></a></li>
+                <li class="services"><a href="#openModal12" onClick='document.getElementById("mapa1").src="restaurantes.html";'><img src="imgs/icono-12.png" alt="servicio 12" /><p style="font-family:'questrialregular';">RESTAURANTES</p></a></li>
+                <li class="services"><a href="#openModal16" onClick='document.getElementById("mapa1").src="departamentales.html";'><img src="imgs/icono-16.png" alt="servicio 16" /><p style="font-family:'questrialregular';">DEPARTAMENTALES</p></a></li>
+                <li class="services" style="padding-top:15px;"><img src="imgs/icono-30.png" style=" height: 40px; float: left; margin-top: -5px; margin-left: 4px;"/><input type="text" class="buscador2"></li>
+                </ul>
+                </section>
+            </section>
+            
+            
+            <section style="width:774px; float:right;">
+                <section id="map-section">
+                <iframe src="mapa-1.html" width="100%" height="520" scrolling="no" name="mapa1" id="mapa1" frameborder="0"></iframe>
+                </section>
+                
+                <div class="floor" style="right:80px; top:10px;"><a href="#" onClick='document.getElementById("mapa1").src="mapa-2.html";'><p style="font-family:'questrialregular'; margin-top: -5px; margin-left: 4px;">PISO 2</p></a></div>
+              <div class="floor"><a href="#" onClick='document.getElementById("mapa1").src="mapa-1.html";'><p style="font-family:'questrialregular'; margin-top: -5px; margin-left: 4px;">PISO 1</p></a></div>
+          <section id="services-bar">
+          <center>
+              <ul id="services">
+                  <li><a  href="#openModal22"><img src="imgs/icono-17.png" alt="servicio 12" /></a></li>
+                  <li><a  href="#openModal23"><img src="imgs/icono-19.png" alt="servicio 1" /></a><p class="text-services">ESTACIONAMIENTO</p></li>
+                  <li><a  href="#openModal24"><img src="imgs/icono-22.png" alt="servicio 4" /></a><p class="text-services">CAJERO <br/> AUTOMÁTICO</p></li>
+                  <li><a  href="#openModal25"><img src="imgs/icono-23.png" alt="servicio 5" /></a><p class="text-services">SALIDA<br/> DE EMERGENCIA</p></li>
+                  <li><a><img src="imgs/icono-20.png" alt="servicio 2" /></a><p class="text-services">SALIDA</p></li>
+                  <li><a><img src="imgs/icono-21.png" alt="servicio 3" /></a><p class="text-services">ESCALERAS</p></li>
+              </ul>
+          </center>
+          </section>
+          
+          <a href="#close" class="cierre">
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ACCESORIOS</h2>
+		<ul>
+       		<li class="tiendas">026 | ELLIE BOUTIQUE</li>
+           <li class="tiendas">032 | ISADORA</li>
+           <li class="tiendas">100 | PLATAX CO</li>
+           <li class="tiendas">144 | FRESA/MAGENTA</li>
+           <li class="tiendas">164 | TODO MODA</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal5" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ENTRETENIMIENTO</h2>
+		<ul>
+       		<a href="#openModal28"><li class="tiendas">171 | CINEPOLIS</li></a>
+           <li class="tiendas">128 | PETER PIPER PIZZA</li>
+           <li class="tiendas">129 | YAK</li>
+           <li class="tiendas">149 | GAME PLANET</li>
+           <li class="tiendas">050 | GAMERS</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal2" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close" style="top:165px;">REGRESAR</a>
+		<h2 class="titles">BANCO</h2>
+		<ul>
+       		<li class="tiendas">040 | CIBANCO</li>
+           <a href="#openModal21"><li class="tiendas">097 | BANCOMER</li></a>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal3" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">COMIDA RÁPIDA</h2>
+		<ul>
+       		<li class="tiendas">077 | CARL´S JR.</li>
+           <li class="tiendas">078 | JACK & RAY</li>
+           <li class="tiendas">079 | TAJIRY</li>
+           <li class="tiendas">080 | SUBWAY</li>
+           <li class="tiendas">081 | DOñA TOTA</li>
+           <li class="tiendas">082 | ENSALADETTI</li>
+           <li class="tiendas">083 | SUNSHINE</li>
+           <li class="tiendas">084 | BUCHAKAS</li>
+           <li class="tiendas">085 | STEAK ESCAPE</li>
+           <li class="tiendas">086 | SUPER SALADS</li>
+           <li class="tiendas">087 | NACHO CRUZ</li>
+           <li class="tiendas">088 | TOSTI-KING</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal4" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close" style="top:182px;">REGRESAR</a>
+		<h2 class="titles">DEPORTES</h2>
+		<ul>
+       		<li class="tiendas">001 | INNOVA SPORT</li>
+           <li class="tiendas">036 | ADIDAS</li>
+           <li class="tiendas">124 | SULTANES OFICIAL</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+
+<a href="#close" class="cierre">
+<div id="openModal8" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close" style="top:163px;">REGRESAR</a>
+		<h2 class="titles">HOGAR/HOME</h2>
+		<ul>
+       		<li class="tiendas">008 | GANT</li>
+           <li class="tiendas">155 | ARTE EGIPCIO</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+
+<a href="#close" class="cierre">
+<div id="openModal10" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close2" style="top:372px;">REGRESAR</a>
+		<h2 class="titles">MODA/FASHION</h2>
+		<ul>
+       		<a href="#openModal19"><li class="tiendas">002 | ZARA</li></a>
+           <li class="tiendas">003 | OYSHO</li>
+           <li class="tiendas">006 | JULIO</li>
+           <li class="tiendas">007 | PULL & BEER</li>
+           <li class="tiendas">018 | SOLET</li>
+           <li class="tiendas">031 | LA AURORA</li>
+           <li class="tiendas">033 | LEVI´S</li>
+           <li class="tiendas">034 | ROBERTS</li>
+           <li class="tiendas">035 | SASHA</li>
+           <li class="tiendas">042 | STUDIO F</li>
+           <li class="tiendas">051 | COMIC</li>
+           <li class="tiendas">062 | CARTER´S</li>
+           <li class="tiendas">064 | BERSHKA</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal11" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ÓPTICAS</h2>
+		<ul>
+       		<li class="tiendas">017- 108 | SUNGLASS HUT</li>
+           <li class="tiendas">030 | DEVLYN</li>
+           <li class="tiendas">038 | MICROMEGA</li>
+           <li class="tiendas">048 | ÓPTICAS LUX</li>
+           <li class="tiendas">096 | ÓPTICAS KAUFFMAN</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre">
+<div id="openModal12" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3" style="top:295px;">REGRESAR</a>
+		<h2 class="titles">RESTAURANTES</h2>
+		<ul>
+       		<a href="#openModal20"><li class="tiendas">059 | CHILI´S</li></a>
+           <li class="tiendas">074 | STARBUCKS</li>
+           <li class="tiendas">075 | EL ANTOJITO FRANCÉS</li>
+           <li class="tiendas">076 | CHORLITOS</li>
+           <li class="tiendas">092 | MCDONALD´S</li>
+           <li class="tiendas">093 | LAS ALITAS</li>
+           <li class="tiendas">095 | ORIENTAL WOK</li>
+           <li class="tiendas">163 | KRISPY KREME</li>
+           <li class="tiendas">168 | COMIC X</li>
+       </ul>
+	</div>
+</div>
+</a>
+
+
+<a href="#close" class="cierre">
+<div id="openModal16" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close" style="top:163px;">REGRESAR</a>
+		<h2 class="titles">DEPARTAMENTALES</h2>
+		<ul>
+       		<li class="tiendas">041 | SANBORNS</li>
+           <a href="#openModal18"><li class="tiendas">045 | LIVERPOOL</li></a>
+       </ul>
+	</div>
+</div>
+</a>
+
+<a href="#close" class="cierre"><div id="openModal18" class="modalDialog4">
+	<div>
+		<a href="#" onClick='document.getElementById("mapa1").src="ruta_departamentales.html";' title="Mostrar ruta" class="close5" style="line-height:113%;">MOSTRAR RUTA</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">LIVERPOOL</h2>
+            <img class="posicion" style="float:right; margin-bottom:10px; height:100px;" src="imgs/tienda1.jpg"/>
+         </div>  
+        	<p style="margin-bottom:0;">Horarios: 10:00 - 18:00 hrs</p>
+           <div class="promociones" style="height:105px; margin-top:0;">
+			<p style="width: 338px; margin-right: 10px; float:left;">Somos la empresa líder a nivel nacional, en tiendas departamentales en constante crecimiento fundada en 1847.<br/>Facilitamos a las familias una selección de productos y servicios para el vestido y el hogar que superan sus expectativas de calidad.</p>
+            <img src="imgs/qr_img.png" style="float:left; width:150px;" />
+            </div>
+            <div class="promociones">
+            <img class="posicion" src="imgs/banner_liverpool01.jpg" />
+            <img class="posicion" src="imgs/banner_liverpool02.jpg"/>
+            </div>
+	</div>
+</div></a>
+
+<a href="#close" class="cierre"><div id="openModal19" class="modalDialog4">
+	<div>
+		<a href="#" onClick='document.getElementById("mapa1").src="ruta_zara.html";' title="Mostrar ruta" class="close5" style="line-height:113%;">MOSTRAR RUTA</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">ZARA</h2>
+            <img class="posicion" style="float:right; margin-bottom:10px; height:100px;" src="imgs/tienda3.jpg"/>
+         </div>  
+        	<p style="margin-bottom:0;">Horarios: 10:00 - 18:00 hrs</p>
+			<div class="promociones" style="height:105px; margin-top:0;">
+			<p style="width: 338px; margin-right: 10px; float:left;">Zara es una tienda de moda. Ofrece ropa de tendencia a un público femenino, adolescente, masculino e infantil, especialmente a gente joven.</p>
+            <img src="imgs/qr_img_zara.png" style="float:left; width:150px;" />
+            </div>
+            <div class="promociones">
+            <img class="posicion" src="imgs/banner_zara01.jpg" />
+            <img class="posicion" src="imgs/banner_zara02.jpg"/>
+            </div>
+	</div>
+</div></a>
+
+<a href="#close" class="cierre"><div id="openModal20" class="modalDialog4">
+	<div>
+		<a href="#" onClick='document.getElementById("mapa1").src="ruta_chilis.html";' title="Mostrar ruta" class="close5" style="line-height:113%;">MOSTRAR RUTA</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">CHILI´S</h2>
+            <img class="posicion" style="float:right; margin-bottom:10px; height:100px;" src="imgs/tienda2.jpg"/>
+         </div>  
+        	<p style="margin-bottom:0;">Horarios: 10:00 - 18:00 hrs</p>
+			<div class="promociones" style="height:105px; margin-top:0;">
+			<p style="width: 338px; margin-right: 10px; float:left;">Chili’s ha conservado el concepto de restaurante antiguo mezclado con el concepto moderno, con todas las tecnologías de la información, pantallas gigantes, Internet, concepto de facturas electrónicas, etc.<br/>
+Comida: Alitas, hamburguesas, cortes y las famosas costillitas.</p>
+            <img src="imgs/qr_img_chilis.png" style="float:left; width:150px;" />
+            </div>
+            <div class="promociones">
+            <img class="posicion" src="imgs/banner_chilis01.jpg" />
+            <img class="posicion" src="imgs/banner_chilis02.jpg"/>
+            </div>
+	</div>
+</div></a>
+
+<a href="#close" class="cierre"><div id="openModal21" class="modalDialog4" data-overflowcontent="true" data-ondocumentclick-close="true" data-ondocumentclick-close-prevent="">
+	<div>
+		<a href="#" onClick='document.getElementById("mapa1").src="ruta_banco.html";' title="Mostrar ruta" class="close5" style="line-height:113%;">MOSTRAR RUTA</a>
+		
+        <div class="promociones">
+        <h4 class="posicion">BBVA BANCOMER</h4>
+            <img class="posicion" style="float:right; margin-bottom:10px; height:100px;" src="imgs/tienda4.jpg"/>
+         </div>  
+        	<p style="margin-bottom:0;">Horarios: 10:00 - 18:00 hrs</p>
+			<div class="promociones" style="height:105px; margin-top:0;">
+			<p style="width: 338px; margin-right: 10px; float:left;">En Bancomer, nuestro principal objetivo es cuidar tus recursos financieros y apoyarte en tus proyectos personales y familiares.<br/>Bancomer pone a su disposición diferentes monedas acuñadas por la Casa de Moneda de México.</p>
+            <img src="imgs/qr_img_bbva.png" style="float:left; width:150px;" />
+            </div>
+            <div class="promociones">
+            <img class="posicion" src="imgs/banner_bancomer01.jpg" />
+            <img class="posicion" src="imgs/banner_bancomer02.jpg"/>
+            </div>
+	</div>
+</div></a>
+
+<a href="#close" class="cierre"><div id="openModal28" class="modalDialog4" data-overflowcontent="true" data-ondocumentclick-close="true" data-ondocumentclick-close-prevent="">
+	<div>
+		<a href="#" onClick='document.getElementById("mapa1").src="ruta_cines.html";' title="Mostrar ruta" class="close5" style="line-height:113%;">MOSTRAR RUTA</a>
+		
+        <div class="promociones">
+        <h4 class="posicion">CINEPOLIS</h4>
+            <img class="posicion" style="float:right; margin-bottom:10px; height:100px;" src="imgs/tienda5.jpg"/>
+         </div>  
+        	<p style="margin-bottom:0;">Horarios: 10:00 - 18:00 hrs</p>
+			<div class="promociones" style="height:105px; margin-top:0;">
+			<p style="width: 338px; margin-right: 10px; float:left;">Cinépolis, empresa familiar mexicana, es actualmente la compañía de exhibición cinematográfica más grande de América Latina y la novena a nivel mundial.</p>
+            <img src="imgs/qr_img_cinepolis.png" style="float:left; width:150px;" />
+            </div>
+            <div class="promociones">
+            <img class="posicion" src="imgs/banner_cinepolis1.jpg" />
+            <img class="posicion" src="imgs/banner_cinepolis2.jpg"/>
+            </div>
+	</div>
+</div></a>
+
+<div id="openModal22" class="modalDialog5">
+	<div>
+    	<a href="#close" title="Close" class="close6">Ocultar servicios</a>
+		<a href="#close"><img src="imgs/servicios-todos.svg" class="telefono-service" width="774"/></a>
+	</div>
+</div>
+
+<div id="openModal23" class="modalDialog5">
+	<div>
+    	<a href="#close" title="Close" class="close6">Ocultar servicios</a>
+		<a href="#close"><img src="imgs/servicios_estacionamiento.svg" class="telefono-service" width="774"/></a>
+	</div>
+</div>
+
+<div id="openModal24" class="modalDialog5">
+	<div>
+    	<a href="#close" title="Close" class="close6">Ocultar servicios</a>
+		<a href="#close"><img src="imgs/servicios_cajeros.svg" class="telefono-service" width="774"/></a>
+	</div>
+</div>
+
+<div id="openModal25" class="modalDialog5">
+	<div>
+    	<a href="#close" title="Close" class="close6">Ocultar servicios</a>
+		<a href="#close"><img src="imgs/servicios_salidadeem.svg" class="telefono-service" width="774"/></a>
+	</div>
+</div>
+
+<div id="openModal26" class="modalDialog5">
+	<div>
+		<a href="#close"><iframe src="mapa-2.html" width="774" height="520" scrolling="no" name="mapa1" id="mapa1" frameborder="0"></iframe></a>
+	</div>
+</div>
+
+<div id="openModal27" class="modalDialog5">
+	<div>
+		<a href="#close"><iframe src="mapa-1.html" width="774" height="520" scrolling="no" name="mapa1" id="mapa1" frameborder="0"></iframe></a>
+	</div>
+</div>
+            
+            </section>
+        </section>
+    <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+    </script>
+	<script type="text/javascript">
+    document.getElementById("mapa1").height = "520";
+    </script>
+</body>
+</html>

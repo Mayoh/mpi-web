@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Simulación</title>
+
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/style-mpi.css" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+<script type="text/javascript" src="js/keyboard.js"></script>
+
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.hammer.min.js" type="text/javascript"></script>
+<script src="js/modernizr.min.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<script src="js/jquery.pinchzoomer.min.js" type="text/javascript"></script> 
+</head>
+
+<body>
+<header id="header-title">
+      <div id="banner-slide">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="imgs/banner01.jpg"></li>
+          <li><img src="imgs/Banner_Liverpool.jpg"></li>
+          <li><img src="imgs/Banner_Bancomer.jpg"></li>
+          <li><img src="imgs/Banner_Zara.jpg"></li>
+          <li><img src="imgs/Banner_Chilis.jpg"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+</header>
+<section id="map-section">
+<img src="imgs/1.png" data-elem="pinchzoomer" data-options="" data-control-options="" data-zoomin-on="" data-zoomin-off="" data-zoomout-on="" data-zoomout-off="" /> 
+<a href="#openModal18"><div id="zone-map"></div></a>
+<a href="#openModal19"><div id="zone-map2"></div></a>
+<a href="#openModal20"><div id="zone-map3"></div></a>
+<a href="#openModal21"><div id="zone-map4"></div></a>
+</section>
+
+<section class="section-3">
+
+<section id="services-bar">
+<div id="seeker-1"><a href="#openModal17"><p style="font-family:'questrialregular'; margin-top:12px; color: #FFFFFF;">BUSCADOR</p></a></div>
+<ul id="services">
+<li><a><img src="imgs/icono-4.png" alt="servicio 12" /></a></li>
+<li><a><img src="imgs/icono-1.png" alt="servicio 0" /></a><p class="text-services">TELÉFONO</p></li>
+<li><a><img src="imgs/icono-1.png" alt="servicio 1" /></a><p class="text-services">ESTACIONAMIENTO</p></li>
+<li><a><img src="imgs/icono-2.png" alt="servicio 2" /></a><p class="text-services">SALIDA</p></li>
+<li><a><img src="imgs/icono-3.png" alt="servicio 3" /></a><p class="text-services">ESCALERAS</p></li>
+<li><a><img src="imgs/icono-4.png" alt="servicio 4" /></a><p class="text-services">CAJERO <br/> AUTOMÁTICO</p></li>
+<li><a><img src="imgs/icono-1.png" alt="servicio 5" /></a><p class="text-services">SALIDA<br/> DE EMERGENCIA</p></li>
+<li><a><img src="imgs/icono-2.png" alt="servicio 6" /></a><p class="text-services">RAMPA</p></li>
+<li><a><img src="imgs/icono-3.png" alt="servicio 7" /></a><p class="text-services">CAPILLA</p></li>
+<li><a><img src="imgs/icono-4.png" alt="servicio 8" /></a><p class="text-services">ADMINISTRACIÓN</p></li>
+<li><a><img src="imgs/icono-1.png" alt="servicio 9" /></a><p class="text-services">TELMEX</p></li>
+<li><a><img src="imgs/icono-2.png" alt="servicio 10" /></a><p class="text-services">ELEVADOR</p></li>
+<li><a><img src="imgs/icono-3.png" alt="servicio 11" /></a><p class="text-services">ÁREA <br/>DE COMIDA</p></li>
+
+</ul>
+</section>
+
+<section id="category_section">
+
+<section id="content-services">
+<ul class="categories">
+<li class="services"><a href="#openModal"><img src="imgs/icono-1.png" alt="servicio 1" /><p style="font-family:'questrialregular';">ACCESORIOS</p></a></li>
+<li class="services"><a href="#openModal2"><img src="imgs/icono-2.png" alt="servicio 2" /><p style="font-family:'questrialregular';">BANCO</p></a></li>
+<li class="services"><a href="#openModal3"><img src="imgs/icono-3.png" alt="servicio 3" /><p style="font-family:'questrialregular';">COMIDA RÁPIDA</p></a></li>
+<li class="services"><a href="#openModal4"><img src="imgs/icono-4.png" alt="servicio 4" /><p style="font-family:'questrialregular';">DEPORTES</p></a></li>
+<li class="services"><a href="#openModal5"><img src="imgs/icono-1.png" alt="servicio 5" /><p style="font-family:'questrialregular';">ENTRETENIMIENTO</p></a></li>
+<li class="services"><a href="#openModal6"><img src="imgs/icono-2.png" alt="servicio 6" /><p style="font-family:'questrialregular';">ESPECIALIZADOS</p></a></li>
+<li class="services"><a href="#openModal7"><img src="imgs/icono-3.png" alt="servicio 7" /><p style="font-family:'questrialregular';">HELADOS <br/>Y SNACKS</p></a></li>
+<li class="services"><a href="#openModal8"><img src="imgs/icono-4.png" alt="servicio 8" /><p style="font-family:'questrialregular';">HOGAR/HOME</p></a></li>
+</ul>
+
+<ul class="categories">
+<li class="services"><a href="#openModal9"><img src="imgs/icono-4.png" alt="servicio 9" /><p style="font-family:'questrialregular';">JOYERÍA</p></a></li>
+<li class="services"><a href="#openModal10"><img src="imgs/icono-4.png" alt="servicio 10" /><p style="font-family:'questrialregular';">MODA/FASHION</p></a></li>
+<li class="services"><a href="#openModal11"><img src="imgs/icono-4.png" alt="servicio 11" /><p style="font-family:'questrialregular';">OPTICAS</p></a></li>
+<li class="services"><a href="#openModal12"><img src="imgs/icono-4.png" alt="servicio 12" /><p style="font-family:'questrialregular';">RESTAURANTES</p></a></li>
+<li class="services"><a href="#openModal13"><img src="imgs/icono-4.png" alt="servicio 13" /><p style="font-family:'questrialregular';">SALUD Y BELLEZA</p></a></li>
+<li class="services"><a href="#openModal14"><img src="imgs/icono-4.png" alt="servicio 14" /><p style="font-family:'questrialregular';">ZAPATERIAS</p></a></li>
+<li class="services"><a href="#openModal15"><img src="imgs/icono-4.png" alt="servicio 15" /><p style="font-family:'questrialregular';">TELEFONÍA <br/>Y ELECTRÓNICOS</p></a></li>
+<li class="services"><a href="#openModal16"><img src="imgs/icono-4.png" alt="servicio 16" /><p style="font-family:'questrialregular';">DEPARTAMENTALES</p></a></li>
+</ul>
+</section>
+
+<section></section>
+
+</section>
+
+</section>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ACCESORIOS</h2>
+		<ul>
+       		<li class="tiendas">26 | ELLIE BOUTIQUE</li>
+           <li class="tiendas">32 | ISADORA</li>
+           <li class="tiendas">100 | PLATAX CO</li>
+           <li class="tiendas">111 | SOLEY</li>
+           <li class="tiendas">113 | KIPLING</li>
+           <li class="tiendas">122 | JACINTAS BOUTIQUE</li>
+           <li class="tiendas">144 | FRESA/MAGENTA</li>
+           <li class="tiendas">164 | TODO MODA</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal2" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">BANCO</h2>
+		<ul>
+       		<li class="tiendas">40 | CIBANCO</li>
+           <li class="tiendas">97 | BANCOMER</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal3" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">COMIDA RÁPIDA</h2>
+		<ul>
+       		<li class="tiendas">77 | CARL´S JR.</li>
+           <li class="tiendas">78 | JACK & RAY</li>
+           <li class="tiendas">79 | TAJIRY</li>
+           <li class="tiendas">80 | SUBWAY</li>
+           <li class="tiendas">81 | DOñA TOTA</li>
+           <li class="tiendas">82 | ENSALADETTI</li>
+           <li class="tiendas">83 | SUNSHINE</li>
+           <li class="tiendas">84 | BUCHAKAS</li>
+           <li class="tiendas">85 | STEAK ESCAPE</li>
+           <li class="tiendas">86 | SUPER SALADS</li>
+           <li class="tiendas">87 | NACHO CRUZ</li>
+           <li class="tiendas">88 | TOSTI-KING</li>
+           <li class="tiendas">89 | MR. FISH</li>
+           <li class="tiendas">91 | VILLA PIZZA</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal4" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">DEPORTES</h2>
+		<ul>
+       		<li class="tiendas">1 | INNOVA SPORT</li>
+           <li class="tiendas">36 | ADIDAS</li>
+           <li class="tiendas">124 | SULTANES OFICIAL</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal5" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ENTRETENIMIENTO</h2>
+		<ul>
+       		<li class="tiendas">50 | GAMERS</li>
+           <li class="tiendas">128 | PETER PIPER PIZZA</li>
+           <li class="tiendas">129 | YAK</li>
+           <li class="tiendas">149 | GAME PLANET</li>
+           <li class="tiendas">171 | CINEPOLIS</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal6" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close2">REGRESAR</a>
+		<h2 class="titles">ESPECIALIZADOS</h2>
+		<ul>
+       		<li class="tiendas">4 | ISHOP</li>
+           <li class="tiendas">5 | MIXUP</li>
+           <li class="tiendas">10 | SAMSONITE</li>
+           <li class="tiendas">23 | SANRIO</li>
+           <li class="tiendas">24 | EPICLAND</li>
+           <li class="tiendas">25 | PHITEN</li>
+           <li class="tiendas">43 | LA VENTANA LIBRERÍA</li>
+           <li class="tiendas">44 | LA JUNGLA DE TIMO</li>
+           <li class="tiendas">99 | FUNSTER</li>
+           <li class="tiendas">102 | CABLEVISION</li>
+           <li class="tiendas">104 | TV TIENDAS</li>
+           <li class="tiendas">107 | LOTERIA NACIONAL 18-VI</li>
+           <li class="tiendas">115 | MILAGRO DIVINO</li>
+           <li class="tiendas">125 | ARTE Y BORDADOS</li>
+           <li class="tiendas">139 | NEBLUS</li>
+           <li class="tiendas">142 | ARTEMANOS</li>
+           <li class="tiendas">150 | PHOTOFOLIO</li>
+           <li class="tiendas">158 | JULIO CEPEDA</li>
+           <li class="tiendas">161 | CROWN BACCARA</li>
+           <li class="tiendas">169 | AEROMEXICO</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal7" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">HELADOS Y SNACKS</h2>
+		<ul>
+       		<li class="tiendas">29 | NUTRISA</li>
+           <li class="tiendas">103 | YOUGURT BOUTIQUE</li>
+           <li class="tiendas">117 | FARMVILLE</li>
+           <li class="tiendas">118 | TAPIOCA</li>
+           <li class="tiendas">126 | YAMBLAYA</li>
+           <li class="tiendas">141 | HELADOS SULTANA</li>
+           <li class="tiendas">157 | HELADOS SANTA CLARA</li>
+           <li class="tiendas">162 | YOGEN FUZ</li>
+           <li class="tiendas">170 | CINNABON</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal8" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">HOGAR/HOME</h2>
+		<ul>
+       		<li class="tiendas">8 | GANT</li>
+           <li class="tiendas">155 | ARTE EGIPCIO</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal9" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">JOYERÍA</h2>
+		<ul>
+       		<li class="tiendas">19 | MARIO RAMOS</li>
+           <li class="tiendas">20 | GHIBERTI</li>
+           <li class="tiendas">21 | MONT BLANC</li>
+           <li class="tiendas">22 | EMWA</li>
+           <li class="tiendas">98 | CARRANZA Y CARRANZA</li>
+           <li class="tiendas">106 | JOYERÍA LA ESMERALDA</li>
+           <li class="tiendas">112 | GARCIA Y TURRIA</li>
+           <li class="tiendas">119 | JOYERÍA JOFRANS</li>
+           <li class="tiendas">120 | POLSO</li>
+           <li class="tiendas">140 | MAX JOYERÍA</li>
+           <li class="tiendas">154 | DEPERLAS</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal10" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close2" style="top:406px;">REGRESAR</a>
+		<h2 class="titles">MODA/FASHION</h2>
+		<ul>
+       		<li class="tiendas">2 | JULIO</li>
+           <li class="tiendas">3 | OYSHIO</li>
+           <li class="tiendas">6 | ZARA</li>
+           <li class="tiendas">7 | PULL & BEER</li>
+           <li class="tiendas">18 | SOLET</li>
+           <li class="tiendas">31 | LA AURORA</li>
+           <li class="tiendas">33 | LEVI´S</li>
+           <li class="tiendas">34 | ROBERTS</li>
+           <li class="tiendas">35 | SASHA</li>
+           <li class="tiendas">42 | STUDIO F</li>
+           <li class="tiendas">51 | COMIC</li>
+           <li class="tiendas">62 | CARTER´S</li>
+           <li class="tiendas">64 | BERSHKA</li>
+           <li class="tiendas">65 | LACOSTE</li>
+           <li class="tiendas">66 | MASSIMO DUTTI</li>
+           <li class="tiendas">67 | SQUALO</li>
+           <li class="tiendas">71 | SCAPPINO</li>
+           <li class="tiendas">72 | ROOM SERVICE</li>
+           <li class="tiendas">73 | BOGA BOUTIQUE</li>
+           <li class="tiendas">109 | ACAPELLA</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal11" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">ÓPTICAS</h2>
+		<ul>
+       		<li class="tiendas">17- 108 | SUNGLASS HUT</li>
+           <li class="tiendas">30 | DEVLYN</li>
+           <li class="tiendas">38 | MICROMEGA</li>
+           <li class="tiendas">48 | OPTICAS LUX</li>
+           <li class="tiendas">96 | OPTICAS KAUFFMAN</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal12" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">RESTAURANTES</h2>
+		<ul>
+       		<li class="tiendas">59 | STARBUCKS</li>
+           <li class="tiendas">74 | CHILI´S</li>
+           <li class="tiendas">75 | EL ANTOJITO FRANCES</li>
+           <li class="tiendas">76 | CHORLITOS</li>
+           <li class="tiendas">92 | MCDONALDS</li>
+           <li class="tiendas">93 | LAS ALITAS</li>
+           <li class="tiendas">95 | ORIENTAL WOK</li>
+           <li class="tiendas">163 | KRISPY KREME</li>
+           <li class="tiendas">168 | COMIC X</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal13" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">SALUD Y BELLEZA</h2>
+		<ul>
+       		<li class="tiendas">13 | YVES ROCHER</li>
+           <li class="tiendas">14 | CRABTREE & EVELYN</li>
+           <li class="tiendas">27 | NATURAL SCENTS</li>
+           <li class="tiendas">46 | DENTALIA</li>
+           <li class="tiendas">47 | ESTETICA INFANTIL GREñITAS</li>
+           <li class="tiendas">57 | GNC</li>
+           <li class="tiendas">114 | 3D LASHES</li>
+           <li class="tiendas">136 | EUROPIEL</li>
+           <li class="tiendas">143 | SALLY BEAUTY SUPPLY</li>
+           <li class="tiendas">146 | CHUY´S</li>
+           <li class="tiendas">153 | PURE CHIC</li>
+           <li class="tiendas">156 | FINDE</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal14" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close2">REGRESAR</a>
+		<h2 class="titles">ZAPATERIAS</h2>
+		<ul>
+       		<li class="tiendas">9 | SENTIES</li>
+           <li class="tiendas">11 | ARANTZA</li>
+           <li class="tiendas">12 | CUADRA</li>
+           <li class="tiendas">15 | CAPA DE OZONO</li>
+           <li class="tiendas">16 | TRUE KIDS</li>
+           <li class="tiendas">52 | SKETCHERS</li>
+           <li class="tiendas">58 | THE ATHLETES FOOT (TAF)</li>
+           <li class="tiendas">61 | PRADA</li>
+           <li class="tiendas">68 | ALTURA 7</li>
+           <li class="tiendas">69 | DIONE</li>
+           <li class="tiendas">70 | NINE WEST</li>
+           <li class="tiendas">105 | BRANTANO</li>
+           <li class="tiendas">110 | PERUGIA</li>
+           <li class="tiendas">148 | FLEXI</li>
+           <li class="tiendas">151 | QUINTO PISO</li>
+           <li class="tiendas">152 | CROCS</li>
+           <li class="tiendas">159| COQUETA Y AUDAZ</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal15" class="modalDialog2">
+	<div>
+		<a href="#close" title="Close" class="close3">REGRESAR</a>
+		<h2 class="titles">TELEFONÍA Y ELECTRÓNICOS</h2>
+		<ul>
+       		<li class="tiendas">39 | RADIOSHACK</li>
+           <li class="tiendas">101 | PHONE CITY</li>
+           <li class="tiendas">116 | TELCEL DISTRIBUIDOR</li>
+           <li class="tiendas">130 | CELLAIRIS</li>
+           <li class="tiendas">131 | MOVISTAR</li>
+           <li class="tiendas">132 | CENTRO DE ATENCIÓN TELCEL</li>
+           <li class="tiendas">135 | IUSACELL</li>
+           <li class="tiendas">167 | STEREN SHOP</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal16" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">REGRESAR</a>
+		<h2 class="titles">DEPARTAMENTALES</h2>
+		<ul>
+       		<li class="tiendas">41 | SANBORNS</li>
+           <li class="tiendas">45 | LIVERPOOL</li>
+       </ul>
+	</div>
+</div>
+
+<div id="openModal17" class="modalDialog3">
+	<div>
+		<a href="#close" title="Close" class="close4">BUSCAR</a>
+		<h2>BUSCADOR</h2>
+		<input type="text" id="write" >
+	<ul id="keyboard">
+		<li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+		<li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+		<li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+		<li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+		<li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+		<li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+		<li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+		<li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+		<li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+		<li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+		<li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+		<li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+		<li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+		<li class="delete lastitem">delete</li>
+		<li class="tab">tab</li>
+		<li class="letter">q</li>
+		<li class="letter">w</li>
+		<li class="letter">e</li>
+		<li class="letter">r</li>
+		<li class="letter">t</li>
+		<li class="letter">y</li>
+		<li class="letter">u</li>
+		<li class="letter">i</li>
+		<li class="letter">o</li>
+		<li class="letter">p</li>
+		<li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+		<li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+		<li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+		<li class="capslock">caps lock</li>
+		<li class="letter">a</li>
+		<li class="letter">s</li>
+		<li class="letter">d</li>
+		<li class="letter">f</li>
+		<li class="letter">g</li>
+		<li class="letter">h</li>
+		<li class="letter">j</li>
+		<li class="letter">k</li>
+		<li class="letter">l</li>
+		<li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+		<li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+		<li class="return lastitem">return</li>
+		<li class="left-shift">shift</li>
+		<li class="letter">z</li>
+		<li class="letter">x</li>
+		<li class="letter">c</li>
+		<li class="letter">v</li>
+		<li class="letter">b</li>
+		<li class="letter">n</li>
+		<li class="letter">m</li>
+		<li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+		<li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+		<li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+		<li class="right-shift lastitem">enter</li>
+		<li class="space lastitem">&nbsp;</li>
+	</ul>
+	</div>
+</div>
+
+<div id="openModal18" class="modalDialog4">
+	<div>
+		<a href="#close" title="Close" class="close5">MOSTRAR UBICACIÓN</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">LIVERPOOL</h2>
+            <img class="posicion" style="float:right;" src="imgs/tienda3.jpg"/>
+         </div>  
+        	<p>Horarios: </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam ex ut neque fringilla tincidunt. Nam et magna tempor, semper diam eget, tempor nunc. Nulla semper elit enim, non pretium quam rhoncus mattis.</p>
+            <div class="promociones">
+            <img class="posicion" src="imgs/promocion1.jpg" />
+            <img class="posicion" src="imgs/promocion2.jpg"/>
+            </div>
+	</div>
+</div>
+
+<div id="openModal19" class="modalDialog4">
+	<div>
+		<a href="#close" title="Close" class="close5">MOSTRAR UBICACIÓN</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">ZARA</h2>
+            <img class="posicion" style="float:right;" src="tienda3.jpg"/>
+         </div>  
+        	<p>Horarios: </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam ex ut neque fringilla tincidunt. Nam et magna tempor, semper diam eget, tempor nunc. Nulla semper elit enim, non pretium quam rhoncus mattis.</p>
+            <div class="promociones">
+            <img class="posicion" src="promocion1.jpg" />
+            <img class="posicion" src="promocion2.jpg"/>
+            </div>
+	</div>
+</div>
+
+<div id="openModal20" class="modalDialog4">
+	<div>
+		<a href="#close" title="Close" class="close5">MOSTRAR UBICACIÓN</a>
+		
+        <div class="promociones">
+        <h2 class="posicion">CHILI´S</h2>
+            <img class="posicion" style="float:right;" src="tienda3.jpg"/>
+         </div>  
+        	<p>Horarios: </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam ex ut neque fringilla tincidunt. Nam et magna tempor, semper diam eget, tempor nunc. Nulla semper elit enim, non pretium quam rhoncus mattis.</p>
+            <div class="promociones">
+            <img class="posicion" src="promocion1.jpg" />
+            <img class="posicion" src="promocion2.jpg"/>
+            </div>
+	</div>
+</div>
+
+<div id="openModal21" class="modalDialog4">
+	<div>
+		<a href="#close" title="Close" class="close5">MOSTRAR UBICACIÓN</a>
+		
+        <div class="promociones">
+        <h4 class="posicion">BBVA BANCOMER</h4>
+            <img class="posicion" style="float:right;" src="tienda4.jpg"/>
+         </div>  
+        	<p>Horarios: </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam ex ut neque fringilla tincidunt. Nam et magna tempor, semper diam eget, tempor nunc. Nulla semper elit enim, non pretium quam rhoncus mattis.</p>
+            <div class="promociones">
+            <img class="posicion" src="promocion1.jpg" />
+            <img class="posicion" src="promocion2.jpg"/>
+            </div>
+	</div>
+</div>
+
+
+<script>
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 300,
+            width         : 1080,
+            responsive    : true,
+            randomstart   : true
+          });
+          
+        });
+      </script>
+    <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+    </script>
+
+</body>
+</html>
