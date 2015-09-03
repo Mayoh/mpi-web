@@ -113,7 +113,7 @@ a {
     position: absolute;
     top: 165px;
     left: 276px;
-    background: transparent;}
+    background: orange;}
 	
 #zone-map02 {
 	 width: 103px;
@@ -122,7 +122,7 @@ a {
     position: absolute;
     top: 208px;
     left: 24px;
-    background: transparent;}
+    background: black;}
 	
 #zone-map03 {
 	 width: 81px;
@@ -141,7 +141,7 @@ a {
     position: absolute;
     top: 291px;
     right: 9px;
-    background: transparent;
+    background: red;
 	  }
 	
 #zone-map05 {
@@ -151,7 +151,7 @@ a {
     position: absolute;
     top: 309px;
     left: 194px;
-    background: transparent;}
+    background: green;}
 	
 
 /*Modal box servicios*/
